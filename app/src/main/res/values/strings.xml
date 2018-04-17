@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OIME Keyboard</string>
+
+    <string name="welcome_string">Welcome to Oime Keyboard</string>
+
+    <string name="subtype_en_US">en_US</string>
+</resources>
