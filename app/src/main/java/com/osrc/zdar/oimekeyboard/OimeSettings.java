@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by anmoluppal on 24/03/18.
- *
+ * <p>
  * A basic Settings Activity class.
  */
 

@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 
 /**
  * Created by anmoluppal on 24/03/18.
- *
+ * <p>
  * Custom implementation of Android Keyboard view.
  */
 

@@ -47,11 +47,11 @@ public class OIMEKeyboardService extends InputMethodService
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 break;
             default:
-                char code = (char)i;
-                if(Character.isLetter(code) && isCaps){
+                char code = (char) i;
+                if (Character.isLetter(code) && isCaps) {
                     code = Character.toUpperCase(code);
                 }
-                ic.commitText(String.valueOf(code),1);
+                ic.commitText(String.valueOf(code), 1);
         }
     }
 
