@@ -46,6 +46,18 @@ public class OIMEKeyboardService extends InputMethodService
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 break;
+            case -101:
+                keyboard = new Keyboard(this, R.xml.latin_symbols_1);
+                kv.setKeyboard(keyboard);
+                break;
+            case -102:
+                keyboard = new Keyboard(this, R.xml.latin);
+                kv.setKeyboard(keyboard);
+                break;
+            case -103:
+                keyboard = new Keyboard(this, R.xml.latin_symbols_2);
+                kv.setKeyboard(keyboard);
+                break;
             default:
                 char code = (char) i;
                 if (Character.isLetter(code) && isCaps) {
@@ -83,7 +95,7 @@ public class OIMEKeyboardService extends InputMethodService
     @Override
     public View onCreateInputView() {
         kv = (OIMEKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboard = new Keyboard(this, R.xml.qwerty);
+        keyboard = new Keyboard(this, R.xml.latin);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
